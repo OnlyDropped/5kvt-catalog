@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Lato-Medium"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 500;
+  font-style: normal;
+  src: local("Lato-Medium"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 600;
+  font-style: normal;
+  src: local("Lato-Semibold"), url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  src: local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: normal;
+  src: local("Lato-Black.woff"), url("../fonts/Lato-Black.woff.woff2") format("woff2"), url("../fonts/Lato-Black.woff.woff") format("woff");
+  font-display: swap;
+}
+
+*, a {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header-body__tel, .header-body__address, .header-nav__catalog {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-size: 16px;
+  line-height: 19px;
+  color: #383838;
+}
+
+a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #383838;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container {
+  max-width: 1156px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9c9c9c;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9c9c9c;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9c9c9c;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9c9c9c;
+}
+
+.index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.index a {
+  font-size: 36px;
+  color: darkviolet;
+}
+
+.header-top {
+  background: #f7f7f7;
+  padding: 13px 0 12px;
+}
+
+.header-top__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 30px;
+}
+
+.header-top__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__slogan {
+  color: #9c9c9c;
+}
+
+.header-top__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 28px;
+}
+
+.header-top__user {
+  display: none;
+}
+
+.header-body {
+  padding: 20px 0 22px;
+}
+
+.header-body__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-body__tel {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.header-body__form {
+  max-width: 292px;
+  width: 100%;
+}
+
+.header-body__label {
+  max-width: 292px;
+  width: 100%;
+  position: relative;
+}
+
+.header-body__label .header-body__search {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5px;
+}
+
+.header-body__input {
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px;
+  padding: 8px 10px;
+}
+
+.header-body__search {
+  background: #1074eb;
+  border-radius: 3px;
+  padding: 3px 10px 5px;
+  color: #fff;
+}
+
+.header-body__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 15px;
+}
+
+.header-body__address {
+  background: #ff9900;
+  border-radius: 3px;
+  color: #fff;
+  padding: 8px 14px 10px 15px;
+}
+
+.header-body__user {
+  background: #1074eb;
+  border-radius: 3px;
+  width: 37px;
+  height: 37px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.header-nav__inner {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.header-nav .container {
+  overflow: hidden;
+}
+
+.header-nav__catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1074eb;
+  border-radius: 3px;
+  color: #fff;
+  padding: 15px 20px 15px 15px;
+  gap: 0 15px;
+}
+
+.header-nav__menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 20px !important;
+  gap: 0 23px;
+  background: #f7f7f7;
+  white-space: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.header-nav__menu::-webkit-scrollbar {
+  width: 10px;
+  height: 4px;
+  background: #000;
+}
+
+.footer {
+  padding: 45px 0 50px;
+  background: #383838;
+}
+
+.footer-body__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-body__items {
+  max-width: 262px;
+  width: 100%;
+}
+
+.footer-body__logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 25px;
+}
+
+.footer-body__tel, .footer-body__mail, .footer-body__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-body__address {
+  max-width: 245px;
+  color: #9c9c9c;
+}
+/*# sourceMappingURL=style.css.map */

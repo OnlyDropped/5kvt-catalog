@@ -1,0 +1,39 @@
+* {
+  @extend %lato-regular-400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #383838;
+}
+
+a {
+  @extend %lato-regular-400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #383838;
+}
+html,
+body{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  flex-grow: 1;
+}
+.container {
+  max-width: 1156px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9c9c9c;
+}
