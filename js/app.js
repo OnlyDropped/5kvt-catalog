@@ -1,8 +1,11 @@
 $('.banner-slider').slick({
-  arrows: false,
+  arrows: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   useTransform: true,
   cssEase: 'ease-in-out',
-  adaptiveHeight: true
+  adaptiveHeight: true,
+  prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
+
 })
