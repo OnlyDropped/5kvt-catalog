@@ -12,14 +12,14 @@ a {
   color: #383838;
 }
 html,
-body{
+body {
   height: 100%;
 }
-body{
+body {
   display: flex;
   flex-direction: column;
 }
-.main{
+.main {
   flex-grow: 1;
 }
 .container {
@@ -36,4 +36,10 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 19px;
   color: #9c9c9c;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 43px;
+  margin-bottom: 70px;
 }
