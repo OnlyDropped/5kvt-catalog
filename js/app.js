@@ -11,10 +11,10 @@ $('.banner-slider').slick({
 })
 
 $('.products-content').slick({
-  arrows: false,
+  arrows: true,
   slidesToShow: 4,
   slidesToScroll: 1,
-  // cssEase: 'ease-in-out',
-  // prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
-  // nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',  
+  cssEase: 'ease-in-out',
+  prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
+  nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',  
 })
