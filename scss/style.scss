@@ -495,39 +495,110 @@
   }
 }
 .catalog-main {
+  padding: 25px 0 50px;
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(100px, 263px) minmax(100px, 849px);
+    // background: #ff9900;
+    gap: 0 30px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // background: palevioletred;
+    gap: 50px 0;
+  }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+    gap: 0 20px;
+  }
+  &__page {
+    color: #9c9c9c;
+  }
+  &__page--active {
+    color: #1074eb;
+  }
+  &__arrow {
+    width: 43px;
+    height: 43px;
+    background: #1074eb;
+    border-radius: 3px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  }
   &__filter {
     max-width: 263px;
     width: 100%;
     background: #f7f7f7;
     border-radius: 3px;
     padding: 30px 20px;
+    height: fit-content;
+  }
+  &__item + .catalog-main__item {
+    margin-top: 10Q;
+  }
+  &__item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c9c9c9;
+    &:last-child {
+      border-bottom: none;
+    }
   }
   &__heading {
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
   }
-  &__label{
-    display: inline-flex;
+  &__price {
+    display: flex;
     align-items: center;
-    gap: 0 13px;
+    justify-content: space-between;
+  }
+  &__price-from input,
+  &__price-to input {
+    width: 106px;
+    background: #fff;
+    border: 1px solid #f7f7f7;
+    border-radius: 3px;
+    padding: 13px;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 0 10px;
     cursor: pointer;
   }
-  &__checkbox{
+  &__label + .catalog-main__label {
+    margin-top: 10px;
+  }
+  &__checkbox {
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     position: absolute;
     transition: 1s;
   }
-  &__check{
-    width: 14px;
-    height: 14px;
-    border: 2px solid #9C9C9C;
-    border-radius: 2px;
+  &__check {
+    width: 19px;
+    height: 19px;
+    background: url("../img/catalog/checkbox.svg") center center no-repeat;
   }
-  &__checkbox:checked + .catalog-main__check{
-    border-color: #1074eb;
+  &__checkbox:checked + .catalog-main__check {
+    background: url("../img/catalog/checkbox-1.svg") center center no-repeat;
   }
 }
 .footer {
