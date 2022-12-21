@@ -500,7 +500,25 @@
     display: grid;
     grid-template-columns: minmax(100px, 263px) minmax(100px, 849px);
     // background: #ff9900;
-    gap: 0 30px;
+    gap: 50px 30px;
+  }
+  &__nav {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__sort {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: #9c9c9c;
+    margin-left: auto;
+  }
+  &__sort-second {
+    margin-left: 50px;
   }
   &__content {
     display: flex;
@@ -599,6 +617,91 @@
   }
   &__checkbox:checked + .catalog-main__check {
     background: url("../img/catalog/checkbox-1.svg") center center no-repeat;
+  }
+}
+.card {
+  padding: 25px 0;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 555px));
+    // background: darkorchid;
+    gap: 0 30px;
+  }
+  &__info {
+    background: #f7f7f7;
+    border-radius: 3px;
+    padding: 0 30px 23px 30px;
+  }
+  &__images {
+    position: relative;
+    .card__sale {
+      top: 30px;
+      left: 0;
+      position: absolute;
+    }
+  }
+  &__sale {
+    background: #e92626;
+    border-radius: 0px 3px 3px 0px;
+    padding: 2px 16px 3px;
+    color: #fff;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #c9c9c9;
+    border-radius: 1px;
+    padding: 30px 0;
+  }
+  &__title {
+    max-width: 395px;
+    margin: 0;
+    span {
+      font-size: 36px;
+      line-height: 43px;
+      color: #9c9c9c;
+    }
+  }
+  &__review {
+    color: #9c9c9c;
+  }
+  &__code {
+    display: flex;
+    align-items: center;
+    gap: 0 3px;
+    color: #9c9c9c;
+  }
+  &__code-number {
+    color: #383838;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+  }
+  &__price-new,
+  &__price-old {
+    @extend %lato-medium-500;
+    font-size: 36px;
+    line-height: 43px;
+  }
+  &__price-old {
+    text-decoration-line: line-through;
+    color: #c9c9c9;
+  }
+  .jq-number {
+    display: inline-flex;
+    width: 120px;
+    height: 45px;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    border-radius: 3px;
+    &__field {
+      background: crimson;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1074eb;
+    }
   }
 }
 .footer {
