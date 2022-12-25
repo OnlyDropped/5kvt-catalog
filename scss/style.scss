@@ -10,6 +10,8 @@
   justify-content: center;
   height: 100vh;
   gap: 30px 0;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  // background: rgb(238,174,202);
   a {
     font-size: 36px;
     color: darkviolet;
@@ -649,6 +651,7 @@
   &__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #c9c9c9;
     border-radius: 1px;
     padding: 30px 0;
@@ -674,10 +677,14 @@
   &__code-number {
     color: #383838;
   }
+  &__code:nth-child(2) {
+    margin: 0 auto 0 30px;
+  }
   &__price {
     display: flex;
     align-items: center;
     gap: 0 30px;
+    // display: none;
   }
   &__price-new,
   &__price-old {
@@ -690,17 +697,286 @@
     color: #c9c9c9;
   }
   .jq-number {
-    display: inline-flex;
     width: 120px;
     height: 45px;
     background: #fff;
     border: 1px solid #9c9c9c;
     border-radius: 3px;
+    padding: 0;
     &__field {
-      background: crimson;
-      font-size: 16px;
-      line-height: 19px;
-      color: #1074eb;
+      width: 100%;
+      height: 100%;
+      box-shadow: none;
+      border: none;
+      border-radius: 0;
+      display: grid;
+      place-items: center;
+      // background: rgba(#ff9900, 0.15);
+      input {
+        padding: 0px;
+        height: 100%;
+        text-align: center;
+        @extend %lato-regular-400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1074eb;
+      }
+    }
+    &__spin {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 19px;
+      height: 19px;
+      user-select: none;
+      text-shadow: none;
+      cursor: pointer;
+      text-shadow: none;
+      border: none;
+      border-radius: 0px;
+      box-shadow: none;
+      background: none;
+      top: 50%;
+      transform: translateY(-50%);
+      &::after {
+        display: none;
+      }
+    }
+    &__spin.minus {
+      left: 13px;
+      z-index: 1;
+      background: url("../img/icons/minus.svg") center center no-repeat;
+    }
+    &__spin.plus {
+      background: url("../img/icons/plus.svg") center center no-repeat;
+      right: 13px;
+    }
+  }
+  &__add {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    background: #1074eb;
+    padding: 18px 80px;
+    border-radius: 3px;
+    @extend %lato-semibold-600;
+    color: #fff;
+  }
+  &__span {
+    color: #e92626;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      left: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 2px solid #e92626;
+    }
+  }
+}
+.card-info {
+  padding: 25px 0;
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(100px, 555px) minmax(100px, 555px);
+    gap: 30px;
+  }
+  &__specifications,
+  &__description,
+  &__review {
+    background: #f7f7f7;
+    border-radius: 3px;
+    padding: 30px;
+  }
+  &__specifications {
+    grid-column: 1 / 3;
+  }
+  &__heading {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #c9c9c9;
+      border-radius: 1px;
+      height: 1px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: minmax(100px, 525px) minmax(100px, 525px);
+    gap: 20px 30px;
+  }
+  &__item {
+    max-width: 525px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9c9c9c;
+  }
+  &__span {
+    font-size: 18px;
+    line-height: 22px;
+    color: #383838;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 22px;
+    color: #9c9c9c;
+    grid-column: 1 / 3;
+  }
+  &__items {
+    display: grid;
+    gap: 20px 0;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .slick-arrow {
+    position: absolute;
+    top: -84px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #1074eb;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+  }
+  .slick-prev.slick-arrow {
+    right: 40px;
+  }
+}
+.buy {
+  padding: 25px 0 100px;
+}
+.swiper {
+  width: 100%;
+  height: 356px;
+}
+// .swiper-slide {
+//   background: #e92626;
+// }
+.contacts {
+  padding: 25px 0;
+  &__img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+  &__body {
+    padding-top: 20px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.swiper-button-next {
+  position: absolute;
+  top: 113px;
+  width: 43px;
+  height: 43px;
+  background: url("../img/icons/arrow-next.svg") center center no-repeat;
+  background-color: #1074eb;
+  border-radius: 3px;
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 113px;
+  width: 43px;
+  height: 43px;
+  background: url("../img/icons/arrow-prev.svg") center center no-repeat;
+  background-color: #1074eb;
+  border-radius: 3px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.contacts-info {
+  padding: 25px 0 100px;
+  &__inner {
+    display: grid;
+    gap: 0 30px;
+    grid-template-columns: minmax(100px, 458px) minmax(100px, 652px);
+  }
+  &__heading {
+    @extend %lato-medium-500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #9c9c9c;
+    margin-bottom: 30px;
+  }
+  &__essential {
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 3px;
+  }
+  &__list {
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      line-height: 22px;
+      color: #383838;
+      & + li {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 0 50px;
+    margin-bottom: 50px;
+    li {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+        font-size: 18px;
+        line-height: 22px;
+        div {
+          display: grid;
+          place-items: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: #fff;
+          box-shadow: 0px 8px 15px rgba(56, 56, 56, 0.2);
+        }
+      }
+    }
+  }
+  &__communication {
+    .contacts-info__list {
+      display: flex;
+      align-items: center;
+      li + li {
+        margin-top: 0;
+        margin-left: 15px;
+      }
     }
   }
 }
