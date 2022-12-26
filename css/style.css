@@ -45,7 +45,7 @@
   font-style: normal;
 }
 
-.products-content__code, .products-content__price-new, .card__price-new, .card__price-old, .contacts-info__heading {
+.products-content__code, .products-content__price-new, .card__price-new, .card__price-old, .contacts-info__heading, .delivery__heading {
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -75,8 +75,8 @@ html {
           box-sizing: inherit;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -1527,6 +1527,100 @@ textarea::placeholder {
 .contacts-info__communication .contacts-info__list li + li {
   margin-top: 0;
   margin-left: 15px;
+}
+
+.delivery {
+  padding: 25px 0 50px;
+}
+
+.delivery__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(100px, 555px) minmax(100px, 555px);
+      grid-template-columns: minmax(100px, 555px) minmax(100px, 555px);
+  gap: 0 30px;
+}
+
+.delivery__item {
+  background: #f7f7f7;
+  border-radius: 3px;
+  padding: 30px;
+}
+
+.delivery__item + .delivery__item {
+  margin-top: 30px;
+}
+
+.delivery__title {
+  margin-bottom: 30px;
+}
+
+.delivery__items {
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.delivery__items::before {
+  position: absolute;
+  content: "";
+  background: #c9c9c9;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  border-radius: 1px;
+}
+
+.delivery__items:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.delivery__items:last-child:before {
+  content: none;
+}
+
+.delivery__items li + li {
+  margin-top: 20px;
+}
+
+.delivery__items li a {
+  color: #1074eb;
+}
+
+.delivery__items li p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #9c9c9c;
+}
+
+.delivery__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  color: #383838;
+  margin-bottom: 20px;
+}
+
+.delivery__subtitle span {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ff9900;
+}
+
+.delivery__heading {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.delivery__num {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ff9900;
+  margin-right: 5px;
 }
 
 .footer {
