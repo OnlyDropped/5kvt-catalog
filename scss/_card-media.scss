@@ -127,20 +127,21 @@
     }
     .products-content {
       max-width: 100%;
-      // background: peru;
       height: 356px;
       &__card,
       &__item {
         width: 172px;
+        max-width: 100%;
       }
       &__item {
-        margin: 0;
+        margin: 0 auto;
+        width: 172px;
       }
-      // .slick-slide[data-slick-index="0"]{
+      // .slick-slide[aria-hidden="true"]{
       //   background: sienna;
       // }
-      // .slick-slide.slick-center{
-      //   background: tomato;
+      // .slick-slide.slick-center {
+      //   background: rgb(108, 71, 255);
       // }
       &__head {
         min-height: 172px;

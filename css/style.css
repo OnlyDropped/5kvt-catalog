@@ -1921,9 +1921,11 @@ textarea::placeholder {
   }
   .buy .products-content__card, .buy .products-content__item {
     width: 172px;
+    max-width: 100%;
   }
   .buy .products-content__item {
-    margin: 0;
+    margin: 0 auto;
+    width: 172px;
   }
   .buy .products-content__head {
     min-height: 172px;
