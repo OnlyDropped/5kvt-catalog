@@ -43,3 +43,42 @@ textarea::placeholder {
   line-height: 43px;
   margin-bottom: 70px;
 }
+
+.breadcrumbs {
+  padding: 20px 0 25px;
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0 19px;
+  }
+  &__link {
+    color: #9c9c9c;
+  }
+  &__item {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      right: -13px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("../img/icons/arrow-right.svg") center center no-repeat;
+      width: 5px;
+      height: 10px;
+    }
+    &:last-child:after {
+      content: none;
+    }
+  }
+  &__item:last-child {
+    .breadcrumbs__link {
+      color: #383838;
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .breadcrumbs{
+    padding: 32px 0 32px;
+  }
+}

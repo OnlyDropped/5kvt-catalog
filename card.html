@@ -14,7 +14,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" style='display: none;'>
       <div class="header__content">
         <div class="header-top">
           <div class="container">
@@ -173,7 +173,7 @@
               <img class="card__img" src="img/card/bg.png" alt="">
               <div class="card__sale">SELL</div>
             </div>
-            <div class="card__info">
+            <div class="card__info card__info--first">
               <div class="card__item">
                 <p class="card__title title">Резчик швов <span>DIAM JRK-500/13.0L 630058</span></p>
                 <a class="card__heart" href="">
@@ -201,6 +201,8 @@
                   <div class="card__code-number">1129973</div>
                 </div>
               </div>
+            </div>
+            <div class="card__info card__info--second">
               <div class="card__item">
                 <div class="card__price">
                   <div class="card__price-new">85 200 ₽</div>
@@ -217,8 +219,19 @@
                   </svg>
                   Добавить в корзину
                 </a>
+                <a class="card__heart" href="">
+                  <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5013 2.34027C12.7524 0.319147 16.2312 0.386231 18.3999 2.55877C20.5676 4.73227 20.6424 8.19377 18.626 10.4516L10.4994 18.5898L2.37462 10.4516C0.35829 8.19377 0.433998 4.72652 2.60079 2.55877C4.77142 0.389106 8.24346 0.316272 10.5013 2.34027ZM17.0429 3.9129C15.6054 2.47348 13.2862 2.41502 11.7816 3.76627L10.5022 4.91436L9.22192 3.76723C7.71254 2.41406 5.39817 2.47348 3.95683 3.91481C2.52891 5.34273 2.45704 7.62836 3.77283 9.13869L10.5003 15.8767L17.2278 9.13965C18.5446 7.62836 18.4727 5.34561 17.0429 3.9129Z" fill="white"/>
+                  </svg>
+
+                </a>
+                <a class="card__share" href="">
+                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0107 14.5514L6.11363 11.8805C5.64356 12.3471 5.04586 12.6641 4.3959 12.7915C3.74593 12.9189 3.07279 12.8511 2.46134 12.5965C1.8499 12.3419 1.32751 11.912 0.960043 11.3609C0.592578 10.8098 0.396484 10.1623 0.396484 9.5C0.396484 8.83767 0.592578 8.19016 0.960043 7.6391C1.32751 7.08805 1.8499 6.65813 2.46134 6.40353C3.07279 6.14894 3.74593 6.08107 4.3959 6.20849C5.04586 6.3359 5.64356 6.65289 6.11363 7.1195L11.0107 4.44863C10.8428 3.66063 10.9641 2.8385 11.3524 2.13258C11.7408 1.42667 12.3703 0.884138 13.1258 0.604211C13.8814 0.324284 14.7124 0.325663 15.467 0.608095C16.2215 0.890528 16.8492 1.43514 17.2353 2.14234C17.6213 2.84954 17.7399 3.67207 17.5693 4.45951C17.3988 5.24695 16.9505 5.94668 16.3064 6.43075C15.6623 6.91482 14.8655 7.15087 14.0617 7.09573C13.2579 7.0406 12.5008 6.69797 11.9288 6.1305L7.03171 8.80138C7.1294 9.26201 7.1294 9.738 7.03171 10.1986L11.9288 12.8695C12.5008 12.302 13.2579 11.9594 14.0617 11.9043C14.8655 11.8491 15.6623 12.0852 16.3064 12.5693C16.9505 13.0533 17.3988 13.7531 17.5693 14.5405C17.7399 15.3279 17.6213 16.1505 17.2353 16.8577C16.8492 17.5649 16.2215 18.1095 15.467 18.3919C14.7124 18.6743 13.8814 18.6757 13.1258 18.3958C12.3703 18.1159 11.7408 17.5733 11.3524 16.8674C10.9641 16.1615 10.8428 15.3394 11.0107 14.5514Z" fill="white"/>
+                  </svg>
+                </a>
                 <span class="card__span">Нет в наличии</span>
-              </div>
+              </div>              
             </div>
           </div>
         </div>
@@ -318,8 +331,8 @@
       <section class="buy">
         <div class="container">
           <p class="products__title title">С этим товаром покупают</p>
-        <div class="products-content">
-          <div class="products-content__item">
+          <div class="products-content">
+            <div class="products-content__item">
             <div class="products-content__card">
               <div class="products-content__head">
                 <img
@@ -379,8 +392,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="products-content__item">
+            </div>
+            <div class="products-content__item">
             <div class="products-content__card">
               <div class="products-content__head">
                 <img
@@ -440,8 +453,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="products-content__item">
+            </div>
+            <div class="products-content__item">
             <div class="products-content__card">
               <div class="products-content__head">
                 <img
@@ -503,8 +516,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="products-content__item">
+            </div>
+            <div class="products-content__item">
             <div class="products-content__card">
               <div class="products-content__head">
                 <img
@@ -564,8 +577,8 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="products-content__item">
+            </div>
+            <div class="products-content__item">
             <div class="products-content__card">
               <div class="products-content__head">
                 <img
@@ -625,12 +638,12 @@
                 </a>
               </div>
             </div>
-          </div>
-        </div>          
+            </div>
+          </div>          
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
       <div class="footer-body">
         <div class="container">
           <div class="footer-body__inner">

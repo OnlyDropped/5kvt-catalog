@@ -17,6 +17,18 @@ $('.products-content').slick({
   cssEase: 'ease-in-out',
   prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',  
+  responsive: [
+    {
+      breakpoint: 376,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '100px',
+        arrows: false,
+      }
+    }
+  ]  
 })
 
 
@@ -28,6 +40,14 @@ $('.products-content').slick({
         cssEase: 'ease-in-out',
         prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow-prev.svg" alt=""></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow-next.svg" alt=""></button>',
+          responsive: [
+          {
+            breakpoint: 375,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
       })
 
 
