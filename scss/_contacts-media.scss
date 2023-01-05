@@ -1,0 +1,94 @@
+@media (max-width: 375px) {
+  .swiper {
+    overflow: inherit;
+  }
+  .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    gap: 0 8px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -16px;
+    left: 0;
+    width: 100%;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+  }
+  .swiper-pagination-bullet {
+    display: block;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background: #1074eb;
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  .swiper-button-prev {
+    top: -56px;
+    left: 0;
+    width: 51px;
+    height: 51px;
+  }
+  .swiper-button-next {
+    top: -56px;
+    right: 0;
+    width: 51px;
+    height: 51px;
+  }
+  .contacts {
+    overflow: hidden;
+    padding: 78px 0 43px;
+    &__body {
+      padding-top: 8px;
+    }
+  }
+  .contacts-info {
+    padding: 43px 0 29px;
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 56px 0;
+    }
+    &__contact {
+      gap: 16px 0px;
+      margin-bottom: 56px;
+      flex-direction: column;
+      align-items: baseline;
+    }
+    &__heading {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 24px;
+    }
+    &__essential {
+      padding: 0px;
+      background: white;
+    }
+    &__list {
+      span {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+    &__list li {
+      flex-direction: column;
+      align-items: baseline;
+      gap: 16px 0;
+    }
+    &__list li + li {
+      margin-top: 32px;
+    }
+  }
+}

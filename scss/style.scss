@@ -524,6 +524,14 @@
   &__page {
     color: #9c9c9c;
   }
+  &__equalizer {
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    background: #1074eb;
+    border-radius: 3px;
+    display: none;
+  }
   &__page--active {
     color: #1074eb;
   }
@@ -904,6 +912,9 @@
 .swiper-button-prev::after {
   display: none;
 }
+.swiper-pagination-bullet{
+  display: none;
+}
 .contacts-info {
   padding: 25px 0 100px;
   &__inner {
@@ -1161,3 +1172,4 @@
 @import "media";
 @import "card-media";
 @import "catalog-media";
+@import "contacts-media";

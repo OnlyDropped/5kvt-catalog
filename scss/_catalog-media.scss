@@ -1,12 +1,14 @@
 @media (max-width: 375px) {
   .catalog-main {
     &__inner {
-      gap: 32px 0;
+      gap: 26px 0;
     }
     &__filter {
       display: none;
     }
     &__nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       flex-direction: column;
       gap: 27px 0;
     }
@@ -70,6 +72,7 @@
           padding: 16px 19px;
           grid-column: 1 / 2;
           width: 113px;
+          margin-top: 16px;
           svg {
             display: none;
           }
@@ -86,10 +89,28 @@
             fill: #fff;
           }
         }
+        &__price-new {
+          font-size: 20px;
+          line-height: 24px;
+        }
       }
+    }
+    &__equalizer {
+      display: grid;
+      grid-column-start: 3;
+      grid-column-end: 3;
+      justify-self: self-end;
+    }
+    &__title {
+      margin: 0;
+      grid-column: 1 / 4;
     }
     &__pagination {
       justify-content: space-between;
+    }
+    &__arrow {
+      width: 51px;
+      height: 51px;
     }
   }
 }

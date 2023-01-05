@@ -202,6 +202,8 @@
               </div>
             </div>
 
+            <div class="swiper-pagination"></div>
+
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -209,7 +211,7 @@
           </div>          
         </div>
       </section>   
-      <section class="contacts-info">
+      <section class="contacts-info" >
         <div class="container">
           <div class="contacts-info__inner">
             <div class="contacts-info__communication">
@@ -400,12 +402,29 @@
         slidesPerView: 3,
         spaceBetween: 30,
         speed: 1400,
-        
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            // spaceBetween: 20
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+        },
 
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: 'true',
         },
 
       });
