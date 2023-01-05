@@ -10,11 +10,20 @@
   justify-content: center;
   height: 100vh;
   gap: 30px 0;
+  text-align: center;
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
   // background: rgb(238,174,202);
   a {
     font-size: 36px;
+    line-height: 32px;
     color: darkviolet;
+  }
+}
+@media (max-width: 375px) {
+  .index {
+    a {
+      font-size: 30px;
+    }
   }
 }
 .header-top {
@@ -605,14 +614,14 @@
     border-radius: 3px;
     padding: 0 30px 23px 30px;
   }
-  &__info--first{
-    .card__item{
+  &__info--first {
+    .card__item {
       padding-top: 15px;
     }
   }
-  &__info--second{
+  &__info--second {
     .card__heart,
-    .card__share{
+    .card__share {
       display: none;
     }
   }
@@ -1151,4 +1160,4 @@
 }
 @import "media";
 @import "card-media";
-
+@import "catalog-media";

@@ -1,0 +1,95 @@
+@media (max-width: 375px) {
+  .catalog-main {
+    &__inner {
+      gap: 32px 0;
+    }
+    &__filter {
+      display: none;
+    }
+    &__nav {
+      flex-direction: column;
+      gap: 27px 0;
+    }
+    &__sort-second {
+      display: none;
+    }
+    &__sort {
+      margin-left: 0;
+    }
+    &__content {
+      grid-column: 1 / 3;
+      gap: 40px 0;
+    }
+    &__info {
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 15px;
+      .products-content {
+        &__item {
+          margin: 0;
+        }
+        &__card,
+        &__item {
+          width: 172px;
+        }
+        &__head {
+          min-height: 172px;
+          .products-content__heart {
+            top: 16px;
+            right: 8px;
+          }
+        }
+        &__body {
+          min-height: 184px;
+          padding-top: 8px;
+        }
+        &__img {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+        }
+        &__code {
+          font-size: 16px;
+          line-height: 19px;
+          color: #ff9900;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        &__name {
+          font-size: 16px;
+          line-height: 19px;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        &__add-cart {
+          padding: 16px 19px;
+          grid-column: 1 / 2;
+          width: 113px;
+          svg {
+            display: none;
+          }
+        }
+        &__chart {
+          grid-row: 4 / 4;
+          display: grid;
+          place-items: center;
+          width: 51px;
+          height: 51px;
+          background: #1074eb;
+          border-radius: 3px;
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+    &__pagination {
+      justify-content: space-between;
+    }
+  }
+}
