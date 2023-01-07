@@ -1814,7 +1814,17 @@ textarea::placeholder {
         grid-template-columns: 1fr;
   }
   .header-top {
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    padding: 0;
+    background: transparent;
+  }
+  .header-top__list, .header-top__box {
     display: none;
+  }
+  .header-top__social {
+    gap: 0 24px;
   }
   .header-body {
     -ms-grid-column: 1;
@@ -2418,6 +2428,40 @@ textarea::placeholder {
   }
   .contacts-info__list li + li {
     margin-top: 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .delivery__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .delivery__item {
+    padding: 16px;
+  }
+  .delivery__items li p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .delivery__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+  }
+  .delivery__heading {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .delivery__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

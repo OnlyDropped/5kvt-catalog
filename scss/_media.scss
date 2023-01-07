@@ -7,7 +7,18 @@
     }
   }
   .header-top {
-    display: none;
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    padding: 0;
+    background: transparent;
+    &__list,
+    &__box {
+      display: none;
+    }
+    &__social {
+      gap: 0 24px;
+    }
   }
   .header-body {
     grid-column: 1/ 6;
