@@ -1,4 +1,82 @@
 @media (max-width: 375px) {
+  .header {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      // background: tomato;
+    }
+  }
+  .header-top {
+    display: none;
+  }
+  .header-body {
+    grid-column: 1/ 6;
+    // background: plum;
+    &__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 16px 0px;
+    }
+    &__user {
+      border-radius: 3px;
+      background: transparent;
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      top: 25px;
+      right: 55px;
+      path {
+        fill: #383838;
+      }
+    }
+    &__address {
+      display: none;
+    }
+    &__socials {
+      display: none;
+    }
+    &__logo {
+      grid-column: 1 / 4;
+      img {
+        width: 113px;
+        height: 30px;
+        object-fit: cover;
+      }
+    }
+    &__tel {
+      font-size: 16px;
+      line-height: 19px;
+      grid-column: 1 / 5;
+    }
+    &__form {
+      max-width: 100%;
+      grid-column: 1 / 7;
+    }
+    &__input {
+      padding: 10px 16px;
+    }
+  }
+  .header-nav {
+    display: grid;
+    justify-content: flex-end;
+    order: -1;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    &__menu {
+      display: none;
+    }
+    &__catalog {
+      justify-content: center;
+      gap: 0;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+      span {
+        display: none;
+      }
+    }
+  }
   .footer {
     padding: 29px 0 32px;
   }

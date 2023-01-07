@@ -1807,6 +1807,104 @@ textarea::placeholder {
 }
 
 @media (max-width: 375px) {
+  .header__content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .header-top {
+    display: none;
+  }
+  .header-body {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1/ 6;
+  }
+  .header-body__inner {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px 0px;
+  }
+  .header-body__user {
+    border-radius: 3px;
+    background: transparent;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 25px;
+    right: 55px;
+  }
+  .header-body__user path {
+    fill: #383838;
+  }
+  .header-body__address {
+    display: none;
+  }
+  .header-body__socials {
+    display: none;
+  }
+  .header-body__logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+  }
+  .header-body__logo img {
+    width: 113px;
+    height: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .header-body__tel {
+    font-size: 16px;
+    line-height: 19px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / 5;
+  }
+  .header-body__form {
+    max-width: 100%;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1 / 7;
+  }
+  .header-body__input {
+    padding: 10px 16px;
+  }
+  .header-nav {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .header-nav__menu {
+    display: none;
+  }
+  .header-nav__catalog {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+  .header-nav__catalog span {
+    display: none;
+  }
   .footer {
     padding: 29px 0 32px;
   }
