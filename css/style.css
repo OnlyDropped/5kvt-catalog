@@ -1983,6 +1983,87 @@ textarea::placeholder {
 }
 
 @media (max-width: 375px) {
+  .banner-slider__card {
+    min-height: 500px;
+  }
+  .banner-slider__item {
+    min-height: 584px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    padding: 32px 0 16px;
+  }
+  .banner-slider__item--first .banner-slider__info {
+    max-width: 282px;
+  }
+  .banner-slider__item--second {
+    padding-top: 65px;
+  }
+  .banner-slider__item--second .banner-slider__title {
+    max-width: 321px;
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+  }
+  .banner-slider__item--second .banner-slider__title span {
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+  }
+  .banner-slider__item--second .banner-slider__text {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 43px;
+  }
+  .banner-slider__item--second .banner-slider__img {
+    display: none;
+  }
+  .banner-slider__item--second .banner-slider__details {
+    position: absolute;
+  }
+  .banner-slider__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+  }
+  .banner-slider__text {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .banner-slider__details {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translateX(-39px);
+            transform: translateX(-39px);
+  }
+  .banner-slider .slick-arrow {
+    width: 51px;
+    height: 51px;
+    bottom: -67px;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    right: 0;
+  }
+  .banner-slider .slick-next.slick-arrow {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+  }
+  .banner-slider .slick-prev.slick-arrow {
+    left: 0;
+    margin-left: auto;
+    -webkit-transform: translateX(-67px);
+            transform: translateX(-67px);
+  }
+}
+
+@media (max-width: 375px) {
   .card {
     padding-top: 0;
   }
